@@ -1,18 +1,32 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="home-container">
+    <div class="sidebar-container">
+      <slidebar-menus></slidebar-menus>
+    </div>
+    <div class="main-container">
+      main
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import SlidebarMenus from '@/components/SlidebarMenus'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    SlidebarMenus
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .home-container{
+    display: flex;
+    .sidebar-container{
+      width: 300px;
+    }
+    .main-container{
+      flex: 1;
+    }
+  }
+</style>
