@@ -1,6 +1,8 @@
 <template>
   <div class="slideMenus">
-    slideMenus
+    <ul>
+      <li></li>
+    </ul>
   </div>
 </template>
 
@@ -10,6 +12,6 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
 </style>
