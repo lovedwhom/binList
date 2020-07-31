@@ -1,0 +1,18 @@
+
+.border1px{
+  position: relative;
+  border:none;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #000;
+    width: 1px;
+    height: 100%;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+}
