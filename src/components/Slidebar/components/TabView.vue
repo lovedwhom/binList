@@ -1,15 +1,36 @@
 <template>
   <div class="tab-view">
-    <div class="tab-view-container">
-      <div class="tab-view-item active">清单</div>
-      <div class="tab-view-item">标签</div>
+    <div class="tab-view-container" >
+      <div v-for="(item,index) in list"
+           :class="[{active:index ===active},'tab-view-item']"
+           :key="index"
+          @click="handleClick(index)"
+      >{{item.name}}</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TabView'
+  name: 'TabView',
+  data () {
+    return {
+      active: 0,
+      list: [
+        {
+          name: '清单'
+        }, {
+          name: '标签'
+        }
+      ]
+    }
+  },
+  methods: {
+    handleClick (index) {
+      this.active = index
+      console.log(111)
+    }
+  }
 }
 </script>
 
