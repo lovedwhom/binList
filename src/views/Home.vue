@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <div class="sidebar-container">
-      <slidebar-menus></slidebar-menus>
+      <slidebar></slidebar>
     </div>
     <div class="main-container">
       main
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import SlidebarMenus from '@/components/SlidebarMenus'
+import Slidebar from '@/components/Slidebar'
 export default {
   name: 'Home',
   components: {
-    SlidebarMenus
+    Slidebar
   }
 }
 </script>

@@ -1,0 +1,30 @@
+{
+  "id": "1970352",
+  "name": "binList",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "binList",
+  "glyphs": [
+    {
+      "icon_id": "356475",
+      "name": "所有",
+      "font_class": "suoyou1",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "1969475",
+      "name": "我的一周",
+      "font_class": "wodeyizhou",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "4784096",
+      "name": "今天",
+      "font_class": "jintian",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    }
+  ]
+}
